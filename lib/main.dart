@@ -2,6 +2,7 @@
 import 'package:betterplayerima/advertise.dart';
 import 'package:flutter/material.dart';
 
+import 'imaBetterPlayer.dart';
 import 'imasdk.dart';
 
 
@@ -100,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
            InkWell(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute( builder: (BuildContext context) =>
-                VideoPlayerWithAds(
+                    BetterPlayerWithAds(
                  contentVideoUrl: "https://deeptotv-live.s3.ap-southeast-1.wasabisys.com/transcoded/2024/10/31/1024368/1/3/1835/manifest.m3u8",
                  adTagUrl: "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/vmap_ad_samples&sz=640x480&cust_params=sample_ar%3Dpremidpostpod&ciu_szs=300x250&gdfp_req=1&ad_rule=1&output=vmap&unviewed_position_start=1&env=vp&impl=s&cmsid=496&vid=short_onecue&correlator="
                 )
